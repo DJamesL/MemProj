@@ -1,0 +1,68 @@
+
+
+
+# .interrupt_vectors
+#>00000000          F_vector_addr (linker command file)
+  00000000 000000DE interrupt_vectors.text F_vect	(Vectors_c.obj)
+
+# .reserved_FCF
+#>00000200          F_FCF_addr (linker command file)
+
+# .ApplicationCode
+#>00000208          F_Pcode_start_addr (linker command file)
+  00000208 00000003 .text   Fmain	(main_c.obj)
+  0000020B 00000007 .text   FCpuUnhandledInterrupt	(Vectors_c.obj)
+  00000212 0000006E .text   F_EntryPoint	(CPU_Init_c.obj)
+  00000280 00000042 .text   FPE_low_level_init	(CPU_Init_c.obj)
+  000002C2 00000076 startup.text Finit_56800_	(56F83x_init_asm.obj)
+  000002C2 00000076 startup.text startup.text	(56F83x_init_asm.obj)
+#>00000338          F_Pcode_end_addr (linker command file)
+#>00000338          __pROM_data_start (linker command file)
+
+# .data_in_p_flash_ROM
+#>00000000          __xRAM_data_start (linker command file)
+#>00000000          __xRAM_data_end (linker command file)
+#>00000000          __data_size (linker command file)
+
+# .ApplicationData
+#>00000000          F_Xbss_start_addr (linker command file)
+#>00000000          _START_BSS (linker command file)
+#>00000000          _END_BSS (linker command file)
+#>00000000          F_Xbss_length (linker command file)
+#>00000000          _HEAP_ADDR (linker command file)
+#>00000100          _HEAP_SIZE (linker command file)
+#>00000100          _HEAP_END (linker command file)
+#>00000200          _min_stack_size (linker command file)
+#>00000100          _stack_addr (linker command file)
+#>00000300          _stack_end (linker command file)
+#>00000000          F_heap_addr (linker command file)
+#>00000100          F_heap_end (linker command file)
+#>00000100          F_Lstack_addr (linker command file)
+#>00000100          F_StackAddr (linker command file)
+#>000002FF          F_StackEndAddr (linker command file)
+#>00000000          F_Ldata_size (linker command file)
+#>00000000          F_Ldata_RAM_addr (linker command file)
+#>00000338          F_Ldata_ROM_addr (linker command file)
+#>00000000          F_Livt_size (linker command file)
+#>00000000          F_Livt_RAM_addr (linker command file)
+#>00000000          F_Livt_ROM_addr (linker command file)
+#>00000000          F_xROM_to_xRAM (linker command file)
+#>00000001          F_pROM_to_xRAM (linker command file)
+#>00000000          F_pROM_to_pRAM (linker command file)
+#>00000000          F_start_bss (linker command file)
+#>00000000          F_end_bss (linker command file)
+#>00000300          __DATA_END (linker command file)
+
+
+# Memory map:
+  v_addr   p_addr   size     name
+  0000C000 0000C000 00000000            .x_Peripherals
+  00000000 00000000 000000DE .interrupt_vectors .p_Interrupts
+  00000208 00000208 00000130 .ApplicationCode .p_Code
+  00000000 00000000 00000300 .ApplicationData .x_Data
+  00000200 00000200 00000000 .reserved_FCF .p_reserved_FCF
+  000040DE 000040DE 00000122            .x_internal_ROM
+  00000000 00000000 00000000 .data_in_p_flash_ROM .p_flash_ROM_data
+
+# Link start time: Thu Oct 12 16:42:09 2017
+# Link end time: Thu Oct 12 16:42:12 2017

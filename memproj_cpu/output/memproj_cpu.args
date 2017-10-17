@@ -1,0 +1,60 @@
+"./Generated_Code/Pins1_c.obj"
+"./Generated_Code/PE_LDD_c.obj"
+"./Generated_Code/Cpu_c.obj"
+"./Project_Settings/Startup_Code/56F83x_init_asm.obj"
+"./Sources/main_c.obj"
+"./Sources/Events_c.obj"
+"./Static_Code/Peripherals/XBARB_Init_c.obj"
+"./Static_Code/Peripherals/XBARA_Init_c.obj"
+"./Static_Code/Peripherals/TMR_Init_c.obj"
+"./Static_Code/Peripherals/SIM_Init_c.obj"
+"./Static_Code/Peripherals/QSPI1_Init_c.obj"
+"./Static_Code/Peripherals/QSPI0_Init_c.obj"
+"./Static_Code/Peripherals/QSCI1_Init_c.obj"
+"./Static_Code/Peripherals/QSCI0_Init_c.obj"
+"./Static_Code/Peripherals/PWMA_Init_c.obj"
+"./Static_Code/Peripherals/PMC_Init_c.obj"
+"./Static_Code/Peripherals/PIT1_Init_c.obj"
+"./Static_Code/Peripherals/PIT0_Init_c.obj"
+"./Static_Code/Peripherals/MCM_Init_c.obj"
+"./Static_Code/Peripherals/INTC_Init_c.obj"
+"./Static_Code/Peripherals/I2C_Init_c.obj"
+"./Static_Code/Peripherals/GPIOF_Init_c.obj"
+"./Static_Code/Peripherals/GPIOE_Init_c.obj"
+"./Static_Code/Peripherals/GPIOD_Init_c.obj"
+"./Static_Code/Peripherals/GPIOC_Init_c.obj"
+"./Static_Code/Peripherals/GPIOB_Init_c.obj"
+"./Static_Code/Peripherals/GPIOA_Init_c.obj"
+"./Static_Code/Peripherals/FTFA_Init_c.obj"
+"./Static_Code/Peripherals/FMC_Init_c.obj"
+"./Static_Code/Peripherals/EWM_Init_c.obj"
+"./Static_Code/Peripherals/DMA_Init_c.obj"
+"./Static_Code/Peripherals/DACB_Init_c.obj"
+"./Static_Code/Peripherals/DACA_Init_c.obj"
+"./Static_Code/Peripherals/CRC_Init_c.obj"
+"./Static_Code/Peripherals/COP_Init_c.obj"
+"./Static_Code/Peripherals/CMPD_Init_c.obj"
+"./Static_Code/Peripherals/CMPC_Init_c.obj"
+"./Static_Code/Peripherals/CMPB_Init_c.obj"
+"./Static_Code/Peripherals/CMPA_Init_c.obj"
+"./Static_Code/Peripherals/CAN_Init_c.obj"
+"./Static_Code/Peripherals/AOI_Init_c.obj"
+"./Static_Code/Peripherals/ADC_Init_c.obj"
+"./Static_Code/System/Vectors_c.obj"
+"./Static_Code/System/Peripherals_Init_c.obj"
+"./Static_Code/System/CPU_Init_c.obj"
+-msgstyle parseable
+-g
+-nostdlib
+"$(ProjDirPath)/Project_Settings/Linker_Files/FLASH_SDM.cmd"
+-main F_EntryPoint
+-L"$(MCUToolsBaseDirEnv)/M56800E Support/msl/MSL_C/DSP_56800E/lib"
+-warn off
+-v3
+-map
+-map unused
+-map showbyte
+-srec
+-sreclength 16 
+-l${VALUE}"$(MCUToolsBaseDirEnv)/M56800E Support/runtime_56800E/lib/runtime 56800E smm.lib"
+-l${VALUE}"$(MCUToolsBaseDirEnv)/M56800E Support/msl/MSL_C/DSP_56800E/lib/MSL C 56800E smm.lib"

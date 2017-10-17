@@ -1,0 +1,54 @@
+-msgstyle parseable
+-g
+-i
+"$(ProjDirPath)/Project_Headers"
+-i
+"$(MCUToolsBaseDirEnv)/M56800E Support/runtime_56800E/include"
+-i
+"$(ProjDirPath)/Generated_Code"
+-i
+"$(ProjDirPath)/Sources"
+-i
+"$(ProjDirPath)/Static_Code/Peripherals"
+-i
+"$(ProjDirPath)/Static_Code/System"
+-i
+"$(ProjDirPath)/Static_Code/IO_Map"
+-i
+"$(ProjDirPath)/Static_Code/PDD"
+-ir
+"$(ProjDirPath)/Source"
+-I-
+-i
+"$(MCUToolsBaseDirEnv)/M56800E Support/msl/MSL_C/MSL_Common/Include"
+-I-
+-i
+"$(MCUToolsBaseDirEnv)/M56800E Support/msl/MSL_C/DSP_56800E/prefix"
+-I-
+-ir
+"$(MCUToolsBaseDirEnv)/M56800E Support"
+-w illpragmas
+-w possible
+-w extended
+-w hidevirtual
+-w implicit
+-w impl_signedunsigned
+-w impl_float2int
+-w impl_int2float
+-w ptrintconv
+-w unusedarg
+-w unusedvar
+-w missingreturn
+-w extracomma
+-w emptydecl
+-w structclass
+-w filecaps
+-w sysfilecaps
+-w notinlined
+-w tokenpasting
+-opt level=4
+-opt speed
+-inline nobottomup
+-sprog
+-v3
+-requireprotos
