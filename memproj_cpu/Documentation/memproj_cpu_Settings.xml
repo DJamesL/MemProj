@@ -60,9 +60,7 @@
           <Saturation_mode v="Disabled" />
           <Utilize_after_reset_values v="default" />
           <list name="Shared Reset settings" v="1">
-            <boolgroup name="Reset pin" v="Enabled">
-              <Reset_Pin v="RESETB/VPP/GPIOD4" />
-            </boolgroup>
+            <boolgroup name="Reset pin" v="Disabled" />
           </list>
           <list name="Shared JTAG pins setiings" v="1">
             <group name="JTAG pins">
@@ -111,7 +109,24 @@
             </enumgroup>
           </list>
           <list name="Flash config settings (included)" v="1">
-            <boolgroup name="Flash configuration field" v="Disabled" />
+            <boolgroup name="Flash configuration field" v="Enabled">
+              <boolgroup name="Flash security" v="Enabled">
+                <Security_bits_value v="00" />
+              </boolgroup>
+              <Freescale_failure_analysis_access v="Enabled" />
+              <Mass_erase v="Enabled" />
+              <Backdoor_key_security v="Disabled" />
+              <Backdoor_key_0 v="255" />
+              <Backdoor_key_1 v="255" />
+              <Backdoor_key_2 v="255" />
+              <Backdoor_key_3 v="255" />
+              <Backdoor_key_4 v="255" />
+              <Backdoor_key_5 v="255" />
+              <Backdoor_key_6 v="255" />
+              <Backdoor_key_7 v="255" />
+              <P_Flash_protection v="4294967295" />
+              <Advanced_low_power_mode v="Enabled" />
+            </boolgroup>
           </list>
           <list name="Flash memory organization (included)" v="1">
             <group name="Flash memory organization">
@@ -285,10 +300,6 @@
                 <PLL_multiplier v="Auto select" />
                 <PLL_clock v="400" />
                 <Enable_PLL_after_reset v="yes" />
-                <group name="PWM clock source">
-                  <PWM_nano_edge v="PLL" />
-                  <PWM_nano_edge_clock__MHz_ v="400" />
-                </group>
               </boolgroup>
               <group name="Peripheral clock rates">
                 <QSCI0_clock_rate v="Auto select" />
@@ -434,13 +445,11 @@
       </boolgroup>
       <boolgroup name="Generate linker file" v="yes">
         <Constants_in_xROM v="no" />
+        <xROM_xRAM_mode v="no" />
         <pROM_xRAM_mode v="yes" />
+        <boolgroup name="Serial bootloader support" v="no" />
         <Stack_size v="512" />
         <Heap_size v="256" />
-        <Set_memory_segments_to_default v="Click to set default &amp;gt;" />
-        <Default_memory_for_interrupts v="INTERNAL FLASH" />
-        <Default_memory_for_code v="INTERNAL FLASH" />
-        <Default_memory_for_data v="INTERNAL RAM" />
         <list name="ROM/RAM Areas" v="5">
           <group name="MemoryArea0">
             <boolgroup name="ROM/RAM Area" v="Enabled">

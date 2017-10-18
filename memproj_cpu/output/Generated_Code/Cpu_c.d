@@ -47,4 +47,4 @@ Generated_Code/Cpu_c.obj: D:\JAMES\MemProj\memproj_cpu\Generated_Code\Cpu.c \
 	D:\JAMES\MemProj\memproj_cpu\Generated_Code\assert.h \
 	D:\JAMES\MemProj\memproj_cpu\Static_Code\System\CPU_Init.h \
 	D:\JAMES\MemProj\memproj_cpu\Generated_Code\PE_LDD.h \
-	D:\JAMES\MemProj\memproj_cpu\Sources\Events.h 
+	D:\JAMES\MemProj\memproj_cpu\Sources\inc\Events.h 

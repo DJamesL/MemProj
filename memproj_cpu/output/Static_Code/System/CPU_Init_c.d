@@ -18,7 +18,7 @@ Static_Code/System/CPU_Init_c.obj: D:\JAMES\MemProj\memproj_cpu\Static_Code\Syst
 	D:\JAMES\MemProj\memproj_cpu\Generated_Code\PE_LDD.h \
 	D:\JAMES\MemProj\memproj_cpu\Static_Code\System\PE_Error.h \
 	D:\JAMES\MemProj\memproj_cpu\Static_Code\System\PE_Const.h \
-	D:\JAMES\MemProj\memproj_cpu\Sources\Events.h \
+	D:\JAMES\MemProj\memproj_cpu\Sources\inc\Events.h \
 	D:\JAMES\MemProj\memproj_cpu\Generated_Code\IO_Map.h \
 	D:\JAMES\MemProj\memproj_cpu\Static_Code\System\PDD_Includes.h \
 	D:\JAMES\MemProj\memproj_cpu\Static_Code\PDD\ADC_CYCLIC_PDD.h \

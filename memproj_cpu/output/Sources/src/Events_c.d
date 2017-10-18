@@ -1,6 +1,6 @@
-Sources/main_c.obj: D:\JAMES\MemProj\memproj_cpu\Sources\main.c \
-	D:\JAMES\MemProj\memproj_cpu\Generated_Code\Cpu.h \
-	D:\JAMES\MemProj\memproj_cpu\Static_Code\System\PE_Types.h \
+Sources/src/Events_c.obj: D:\JAMES\MemProj\memproj_cpu\Sources\src\Events.c \
+	D:\JAMES\MemProj\memproj_cpu\Generated_Code\Init_Config.h \
+	D:\JAMES\MemProj\memproj_cpu\Generated_Code\CPU_Config.h \
 	D:\Freescale\CW\ MCU\ v10.6\MCU\M56800E\ Support\msl\MSL_C\MSL_Common\Include\stdint.h \
 	D:\Freescale\CW\ MCU\ v10.6\MCU\M56800E\ Support\msl\MSL_C\MSL_Common\Include\ansi_parms.h \
 	D:\Freescale\CW\ MCU\ v10.6\MCU\M56800E\ Support\msl\MSL_C\MSL_Common\Include\msl_c_version.h \
@@ -10,13 +10,13 @@ Sources/main_c.obj: D:\JAMES\MemProj\memproj_cpu\Sources\main.c \
 	D:\Freescale\CW\ MCU\ v10.6\MCU\M56800E\ Support\msl\MSL_C\MSL_Common\Include\cstdint \
 	D:\Freescale\CW\ MCU\ v10.6\MCU\M56800E\ Support\msl\MSL_C\MSL_Common\Include\limits_api.h \
 	D:\Freescale\CW\ MCU\ v10.6\MCU\M56800E\ Support\msl\MSL_C\MSL_Common\Include\msl_lib_ext1.h \
+	D:\JAMES\MemProj\memproj_cpu\Generated_Code\Pins1.h \
+	D:\JAMES\MemProj\memproj_cpu\Generated_Code\Cpu.h \
+	D:\JAMES\MemProj\memproj_cpu\Static_Code\System\PE_Types.h \
 	D:\JAMES\MemProj\memproj_cpu\Static_Code\System\PE_Error.h \
 	D:\JAMES\MemProj\memproj_cpu\Static_Code\System\PE_Const.h \
 	D:\JAMES\MemProj\memproj_cpu\Generated_Code\IO_Map.h \
 	D:\JAMES\MemProj\memproj_cpu\Static_Code\IO_Map\MC56F82748.h \
-	D:\JAMES\MemProj\memproj_cpu\Generated_Code\Init_Config.h \
-	D:\JAMES\MemProj\memproj_cpu\Generated_Code\CPU_Config.h \
-	D:\JAMES\MemProj\memproj_cpu\Generated_Code\Pins1.h \
 	D:\JAMES\MemProj\memproj_cpu\Static_Code\System\PDD_Includes.h \
 	D:\JAMES\MemProj\memproj_cpu\Static_Code\PDD\ADC_CYCLIC_PDD.h \
 	D:\JAMES\MemProj\memproj_cpu\Static_Code\PDD\PDD_Types.h \
@@ -47,4 +47,4 @@ Sources/main_c.obj: D:\JAMES\MemProj\memproj_cpu\Sources\main.c \
 	D:\JAMES\MemProj\memproj_cpu\Generated_Code\assert.h \
 	D:\JAMES\MemProj\memproj_cpu\Static_Code\System\CPU_Init.h \
 	D:\JAMES\MemProj\memproj_cpu\Generated_Code\PE_LDD.h \
-	D:\JAMES\MemProj\memproj_cpu\Sources\Events.h 
+	D:\JAMES\MemProj\memproj_cpu\Sources\inc\Events.h 

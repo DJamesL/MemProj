@@ -7,8 +7,6 @@
 -i
 "$(ProjDirPath)/Generated_Code"
 -i
-"$(ProjDirPath)/Sources"
--i
 "$(ProjDirPath)/Static_Code/Peripherals"
 -i
 "$(ProjDirPath)/Static_Code/System"
@@ -16,6 +14,10 @@
 "$(ProjDirPath)/Static_Code/IO_Map"
 -i
 "$(ProjDirPath)/Static_Code/PDD"
+-i
+"$(ProjDirPath)/Sources/src"
+-i
+"$(ProjDirPath)/Sources/inc"
 -ir
 "$(ProjDirPath)/Source"
 -I-

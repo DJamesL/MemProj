@@ -85,7 +85,7 @@ OBJS_OS_FORMAT :=
 SUBDIRS := \
 Static_Code/System \
 Static_Code/Peripherals \
-Sources \
+Sources/src \
 Project_Settings/Startup_Code \
 Generated_Code \
 

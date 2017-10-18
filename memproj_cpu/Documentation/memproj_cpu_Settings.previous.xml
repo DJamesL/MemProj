@@ -29,12 +29,12 @@
           <list name="Clock configurations" v="1">
             <group name="Clock configuration 0">
               <Input_clock_source_ v="Internal oscillator 8MHz" />
-              <Clock_output_divider__Postscaler_ v="Auto select" />
+              <Clock_output_divider__Postscaler_ v="2" />
               <Bus_clock__IP_Bus___MHz_ v="50" />
               <Core_clock__MHz_ v="50" />
               <System_clock__MHz_ v="50" />
               <boolgroup name="PLL clock" v="Enabled">
-                <PLL_multiplier v="Auto select" />
+                <PLL_multiplier v="50" />
                 <PLL_clock v="400" />
                 <Enable_PLL_after_reset v="yes" />
                 <group name="PWM clock source">

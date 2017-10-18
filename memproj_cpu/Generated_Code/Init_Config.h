@@ -7,7 +7,7 @@
 **     Version     : Component 01.055, Driver 01.00, CPU db: 3.50.001
 **     Datasheet   : MC56F827XXRM Rev.1 Draft A 02/2012
 **     Compiler    : CodeWarrior DSP C Compiler
-**     Date/Time   : 2017-10-12, 16:41, # CodeGen: 1
+**     Date/Time   : 2017-10-18, 11:12, # CodeGen: 2
 **     Abstract    :
 **         This file collects Processor Expert components configuration 
 **         and interface files.

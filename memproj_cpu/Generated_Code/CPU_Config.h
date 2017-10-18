@@ -5,7 +5,7 @@
 **     Processor   : MC56F82748VLH
 **     Version     : Component 01.055, Driver 01.00, CPU db: 3.50.001
 **     Compiler    : CodeWarrior DSP C Compiler
-**     Date/Time   : 2017-10-12, 16:41, # CodeGen: 1
+**     Date/Time   : 2017-10-18, 11:12, # CodeGen: 2
 **
 **     Copyright : 1997 - 2014 Freescale Semiconductor, Inc. 
 **     All Rights Reserved.
@@ -322,11 +322,46 @@ typedef uint32_t TCpuBusFreqHz;
 #define CPU_BANDGAP_TRIM                                   0x01U     /* Bandgap trim initialized in PE_low_level_init() */ 
 /* Property: Common settings\Trim value address */
 #define CPU_BANDGAP_TRIM_VALUE                             ((*(uint16_t *)0xE42D) & SIM_NVMOPT2L_PMC_BGTRIM_MASK) /* Masked, not shifted bandgap trim value in non-volatile memory */
+     
+/* Flash configuration field constants */
+#define CPU_FLASH_CONFIG_FIELD \
+               /* NV_BACKKEY3: KEY=0xFF */ \
+               0xFFU, \
+               /* NV_BACKKEY2: KEY=0xFF */ \
+               0xFFU, \
+               /* NV_BACKKEY1: KEY=0xFF */ \
+               0xFFU, \
+               /* NV_BACKKEY0: KEY=0xFF */ \
+               0xFFU, \
+               /* NV_BACKKEY7: KEY=0xFF */ \
+               0xFFU, \
+               /* NV_BACKKEY6: KEY=0xFF */ \
+               0xFFU, \
+               /* NV_BACKKEY5: KEY=0xFF */ \
+               0xFFU, \
+               /* NV_BACKKEY4: KEY=0xFF */ \
+               0xFFU, \
+               /* NV_FPROT3: PROT=0xFF */ \
+               0xFFU, \
+               /* NV_FPROT2: PROT=0xFF */ \
+               0xFFU, \
+               /* NV_FPROT1: PROT=0xFF */ \
+               0xFFU, \
+               /* NV_FPROT0: PROT=0xFF */ \
+               0xFFU, \
+               /* NV_FSEC: KEYEN=1,MEEN=3,FSLACC=3,SEC=0 */ \
+               0x7CU, \
+               /* NV_FOPT: ??=1,??=1,??=1,??=1,??=1,??=1,??=0,ALPBOOT=1 */ \
+               0xFDU, \
+               /* Reserved */ \
+               0xFFU, \
+               /* Reserved */ \
+               0xFFU
 
 /* Reset pin settings */
 
 /* Property: Common settings\Reset pin */
-#define CPU_RESET_PIN                                      0x01U     /* Reset pin initialized in PE_low_level_init() */ 
+#define CPU_RESET_PIN                                      0x00U     /* Reset pin not initialized in PE_low_level_init() */ 
   
 /* JTAG pin settings */
 
@@ -346,7 +381,7 @@ typedef uint32_t TCpuBusFreqHz;
   
 /* Common_Init() parameterization settings */
   
-#define CPU_COMMON_INIT                                    0x00U     /* Common_Init() method is not called in PE_low_level_init() */ 
+#define CPU_COMMON_INIT                                    0x01U     /* Call Common_Init() method in PE_low_level_init() */ 
   
 /* Peripherals_Init() parameterization settings */
   

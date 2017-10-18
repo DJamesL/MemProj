@@ -2,7 +2,7 @@
 # Unreferenced symbols:
 	(Pins1_c.obj )	[whole file]
 	(PE_LDD_c.obj )	[whole file]
-	(Cpu_c.obj )	[whole file]
+	FCpuClockSources	(Cpu_c.obj )
 	FCpuClockSources	(main_c.obj )
 	(Events_c.obj )	[whole file]
 	(XBARB_Init_c.obj )	[whole file]
@@ -56,13 +56,15 @@
 
 # .reserved_FCF
  #>00000200          F_FCF_addr (linker command file)
+   00000200 00000008 reserved_FCF.text F_cfm	(CPU_Init_c.obj)
 
 # .ApplicationCode
  #>00000208          F_Pcode_start_addr (linker command file)
-   00000208 00000003 .text   Fmain	(main_c.obj)
-   0000020B 00000007 .text   FCpuUnhandledInterrupt	(Vectors_c.obj)
-   00000212 0000004B .text   F_EntryPoint	(CPU_Init_c.obj)
-   0000025D 00000034 .text   FPE_low_level_init	(CPU_Init_c.obj)
+   00000208 00000001 .text   FCommon_Init	(Cpu_c.obj)
+   00000209 00000003 .text   Fmain	(main_c.obj)
+   0000020C 00000007 .text   FCpuUnhandledInterrupt	(Vectors_c.obj)
+   00000213 0000004B .text   F_EntryPoint	(CPU_Init_c.obj)
+   0000025E 00000033 .text   FPE_low_level_init	(CPU_Init_c.obj)
    00000291 00000076 startup.text Finit_56800_	(56F83x_init_asm.obj)
    00000291 00000076 startup.text startup.text	(56F83x_init_asm.obj)
  #>00000307          F_Pcode_end_addr (linker command file)
@@ -109,9 +111,9 @@
   00000000 00000000 000000DE .interrupt_vectors .p_Interrupts
   00000208 00000208 00000100 .ApplicationCode .p_Code
   00000000 00000000 00000300 .ApplicationData .x_Data
-  00000200 00000200 00000000 .reserved_FCF .p_reserved_FCF
+  00000200 00000200 00000008 .reserved_FCF .p_reserved_FCF
   000040DE 000040DE 00000122            .x_internal_ROM
   00000000 00000000 00000000 .data_in_p_flash_ROM .p_flash_ROM_data
 
-# Link start time: Thu Oct 12 17:39:10 2017
-# Link end time: Thu Oct 12 17:39:10 2017
+# Link start time: Wed Oct 18 13:28:16 2017
+# Link end time: Wed Oct 18 13:28:17 2017

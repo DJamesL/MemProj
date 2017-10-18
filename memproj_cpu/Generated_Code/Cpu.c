@@ -7,7 +7,7 @@
 **     Version     : Component 01.055, Driver 01.00, CPU db: 3.50.001
 **     Datasheet   : MC56F827XXRM Rev.1 Draft A 02/2012
 **     Compiler    : CodeWarrior DSP C Compiler
-**     Date/Time   : 2017-10-12, 09:45, # CodeGen: 0
+**     Date/Time   : 2017-10-18, 11:12, # CodeGen: 2
 **     Abstract    :
 **
 **     Settings    :
@@ -89,6 +89,10 @@ extern "C" {
 #if CPU_COMMON_INIT
 void Common_Init(void)
 {
+  /* Common initialization of registers which initialization is required for proper 
+     functionality of components in the project (e.g. synchronization between 
+     components, functionality common for different peripherals of the same type etc.). */
+
 }
 
 #endif /* CPU_COMMON_INIT */
